@@ -1,0 +1,12 @@
+<h1>
+    Рецепты
+</h1>
+<ul>
+    <li *ngFor="let recipe of recipes">
+        <a routerLink="/recipe-details/{{recipe.name}}">
+            {{
+                recipe.name
+            }}
+        </a>
+    </li>
+</ul>
