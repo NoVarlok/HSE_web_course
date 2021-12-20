@@ -3,7 +3,7 @@
 </h1>
 <h2>
     {{recipe.name}}
-    <button>Добавить в корзизу</button>
+    <button (click)="addToShoppingList()">Добавить в корзизу</button>
 </h2>
 <ul>
     <li *ngFor="let ingredient of recipe.ingredients">
